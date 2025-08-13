@@ -22,4 +22,11 @@
 1. **Top-level navigation** = The main browser URL changes (clicking a link, submitting a form to `_top`, or setting `window.location`).
 2. **Safe method** = HTTP method considered safe by HTTP spec (GET, HEAD, OPTIONS, TRACE). For SameSite purposes, only GET is relevant.
 3. **SameSite=None** requires the `Secure` flag and HTTPS.
-4. SameSite i
+4. SameSite is enforced **per cookie** — you can set different rules for different cookies.
+
+---
+
+## CSRF Implications:
+- **Strict**: Strongest protection, but may break legitimate cross-site flows (e.g., login redirects).
+- **Lax**: Blocks most CSRF, except unsafe GET actions triggered by top-level navigation.
+- **None**: Vulnerable to CSRF unless other defenses (like CSRF tokens) are implemented.
