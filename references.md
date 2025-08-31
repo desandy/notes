@@ -1,3 +1,4 @@
-https://appsecexplained.gitbook.io/appsecexplained/discovery-recon/methodology
-https://owasp.org/www-project-web-security-testing-guide/v42/
-https://wordlists.assetnote.io
+- https://appsecexplained.gitbook.io/appsecexplained/discovery-recon/methodology
+- https://owasp.org/www-project-web-security-testing-guide/v42/
+- https://wordlists.assetnote.io
+- https://webhook.site
